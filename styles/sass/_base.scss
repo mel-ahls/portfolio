@@ -32,7 +32,8 @@ html {
 
 body {
   font-family: $body;
-	color: $dark;
+  color: $dark;
+  background-color: $snow;
 }
 
 .wrapper {
@@ -48,13 +49,38 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 50px;
-  letter-spacing: 4px;
-  // width: 100%;
+  letter-spacing: 2px;
 }
 
 h1 ~ h2 {
   font-size: 30px;
   font-family: $body;
+}
+
+// layered text styles
+.title-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.front-title, .back-title {
+  position: absolute;
+  display: inline;
+  // width: 100%;
+}
+
+.back-title {
+  font-family: $cursive;
+  font-size: 150px;
+  color: $moon;
+  text-transform: lowercase;
+  opacity: .4;
+  top: -75px;
+  right: 108px;
 }
 
 h3 {
@@ -68,13 +94,6 @@ h4 {
   letter-spacing: 4px;
   margin: 20px 0;
 }
-
-// h5 {
-//   font-size: 13px;
-//   letter-spacing: 2px;
-//   margin: 10px 0;
-//   line-height: 2em;
-// }
 
 p {
   font-size: 18px;

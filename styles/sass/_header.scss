@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background-image: url(../assets/lavender-image.jpg);
+  background-image: url(../assets/leaf-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,10 +19,8 @@ nav ul {
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  position: relative;
+  top: 280px;
   text-align: center;
 }
 
@@ -31,7 +29,7 @@ nav ul {
   height: 100px;
   bottom: -100px;
   position: absolute;
-  background: #fff;
+  background: $snow;
   right: 0;
   transform: scale(1, 1) translate(4px, -50px) rotate(-4deg);
 }
@@ -39,8 +37,8 @@ nav ul {
 .angle-left {
   width: 55%;
   height: 100px;
-  position: absolute;
-  background: #fff;
   bottom: -100px;
+  position: absolute;
+  background: $snow;
   transform: scale(1, 1) translate(-4px, -50px) rotate(4deg);
 }
