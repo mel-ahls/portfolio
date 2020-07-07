@@ -1,0 +1,83 @@
+/* STYLE RESETS */
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+// BASE STYLES
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $body;
+	color: $dark;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: $heading;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 4px;
+  // width: 100%;
+}
+
+h1 ~ h2 {
+  font-size: 30px;
+  font-family: $body;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 40px 0;
+}
+
+h4 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin: 20px 0;
+}
+
+// h5 {
+//   font-size: 13px;
+//   letter-spacing: 2px;
+//   margin: 10px 0;
+//   line-height: 2em;
+// }
+
+p {
+  font-size: 18px;
+  line-height: 2em;
+  // width: 100%;
+}

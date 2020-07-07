@@ -1,0 +1,46 @@
+header {
+  height: 100vh;
+  background-image: url(../assets/lavender-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  li {
+    padding-top: 20px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.angle-right {
+  width: 55%;
+  height: 100px;
+  bottom: -100px;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  transform: scale(1, 1) translate(4px, -50px) rotate(-4deg);
+}
+
+.angle-left {
+  width: 55%;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  bottom: -100px;
+  transform: scale(1, 1) translate(-4px, -50px) rotate(4deg);
+}

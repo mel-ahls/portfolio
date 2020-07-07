@@ -246,13 +246,124 @@ p {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3f382e;
+}
+
 img {
   width: 100%;
   display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3f382e;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Cormorant", serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+h1 ~ h2 {
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 40px 0;
+}
+
+h4 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../assets/lavender-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+nav ul li {
+  padding-top: 20px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.angle-right {
+  width: 55%;
+  height: 100px;
+  bottom: -100px;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  -webkit-transform: scale(1, 1) translate(4px, -50px) rotate(-4deg);
+          transform: scale(1, 1) translate(4px, -50px) rotate(-4deg);
+}
+
+.angle-left {
+  width: 55%;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  bottom: -100px;
+  -webkit-transform: scale(1, 1) translate(-4px, -50px) rotate(4deg);
+          transform: scale(1, 1) translate(-4px, -50px) rotate(4deg);
 }
