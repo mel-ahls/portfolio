@@ -1,0 +1,15 @@
+.projects {
+  text-align: center;
+  h3 {
+    margin-top: 60px;
+  }
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 50%;
+}

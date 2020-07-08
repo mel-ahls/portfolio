@@ -1,0 +1,27 @@
+.skills {
+  background-image: url(../assets/skills-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills ul {
+  flex-wrap: wrap;
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  li {
+    padding: 5%;
+    text-transform: uppercase;
+  }
+}
+
+li i {
+  font-size: 70px;
+}

@@ -324,7 +324,6 @@ h1 ~ h2 {
 h3 {
   font-size: 24px;
   letter-spacing: 3px;
-  margin: 40px 0;
 }
 
 h4 {
@@ -340,7 +339,7 @@ p {
 
 header {
   height: 100vh;
-  background-image: url(../assets/leaf-image.jpg);
+  background-image: url(../assets/tree-edit.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -362,7 +361,7 @@ nav ul li {
 }
 
 .intro {
-  position: relative;
+  position: absolute;
   top: 280px;
   text-align: center;
 }
@@ -399,4 +398,65 @@ nav ul li {
 .about-info {
   padding: 6%;
   text-align: center;
+}
+
+.skills {
+  background-image: url(../assets/skills-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.skills ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.skills ul li {
+  padding: 5%;
+  text-transform: uppercase;
+}
+
+li i {
+  font-size: 70px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects h3 {
+  margin-top: 60px;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project {
+  width: 50%;
 }

@@ -70,7 +70,6 @@ h1 ~ h2 {
 .front-title, .back-title {
   position: absolute;
   display: inline;
-  // width: 100%;
 }
 
 .back-title {
@@ -86,7 +85,7 @@ h1 ~ h2 {
 h3 {
   font-size: 24px;
   letter-spacing: 3px;
-  margin: 40px 0;
+  // margin: 40px 0;
 }
 
 h4 {
@@ -98,5 +97,4 @@ h4 {
 p {
   font-size: 18px;
   line-height: 2em;
-  // width: 100%;
 }
