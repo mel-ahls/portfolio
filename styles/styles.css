@@ -395,6 +395,10 @@ nav ul li {
   display: flex;
 }
 
+.about img {
+  opacity: .9;
+}
+
 .about-info {
   padding: 6%;
   text-align: center;
@@ -449,14 +453,45 @@ li i {
   margin-top: 60px;
 }
 
-.project-container {
+.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.project {
-  width: 50%;
+.two, .four {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.desc {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preview {
+  width: 40%;
+  padding: 3%;
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+span {
+  color: #6d7975;
+  font-weight: bold;
 }
