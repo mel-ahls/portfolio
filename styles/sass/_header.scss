@@ -1,12 +1,11 @@
 header {
   height: 100vh;
-  background-image: url(../assets/tree-edit.png);
+  background-image: url(../assets/tree.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
+  opacity: 0.9;
 }
-
 
 nav ul {
   display: flex;
@@ -15,15 +14,38 @@ nav ul {
     padding-top: 20px;
     padding-left: 10px;
     text-transform: uppercase;
+    .fa-envelope {
+      font-size: 18px;
+    }
   }
 }
 
-.intro {
-  position: absolute;
-  top: 280px;
-  text-align: center;
+// layered text
+.intro.title-container {
+  position: relative;
+  top: 121px;
+  right: -528px;
 }
 
+.intro .front-title, .intro .back-title {
+  position: absolute;
+}
+
+.intro .back-title {
+  font-family: $cursive;
+  font-size: 110px;
+  color: white;
+  text-transform: lowercase;
+  opacity: .4;
+  top: 40px;
+}
+
+.intro .front-title {
+  top: 88px;
+  left: 95px;
+}
+
+// arrow detail below header
 .angle-right {
   width: 55%;
   height: 100px;
@@ -42,3 +64,4 @@ nav ul {
   background: $snow;
   transform: scale(1, 1) translate(-4px, -50px) rotate(4deg);
 }
+

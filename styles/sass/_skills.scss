@@ -1,6 +1,6 @@
 .skills {
   background-image: url(../assets/skills-img.png);
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
@@ -12,16 +12,24 @@
 }
 
 .skills ul {
-  flex-wrap: wrap;
-  width: 60%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 0 auto;
+  padding: 3%;
   li {
-    padding: 5%;
+    width: 230px;
+    height: 130px;
     text-transform: uppercase;
+    text-align: center;
+    i {
+      font-size: 70px;
+      padding: 5%;
+    }
   }
 }
 
-li i {
-  font-size: 70px;
+.fas.fa-terminal, .fas.fa-code-branch {
+  font-size: 60px;
 }

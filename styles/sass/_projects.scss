@@ -1,14 +1,9 @@
 .projects {
   text-align: center;
   h3 {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
-
-// .project-container {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
 
 .project {
   // width: 50%;
@@ -27,15 +22,30 @@
   align-items: center;
 }
 
+.btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  a {
+    padding: 4%;
+    width: 150px;
+    margin: 2%;
+    background-color: $lilac;
+  }
+}
+
 .preview {
   width: 40%;
   padding: 3%;
   width: 80%;
   margin: 0 auto;
   opacity: 0.8;
+  img {
+    border-radius: 25px;
+  }
 }
 
 span {
-  color: #6d7975;
+  color: $wolf;
   font-weight: bold;
 }

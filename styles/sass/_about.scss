@@ -12,5 +12,29 @@
   text-align: center;
 }
 
+// layered text
+.about .title-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.about .front-title, .about .back-title {
+  position: absolute;
+  display: inline;
+}
+
+.about .back-title {
+  font-family: $cursive;
+  font-size: 150px;
+  color: $moon;
+  text-transform: lowercase;
+  opacity: .4;
+  top: -75px;
+  right: 108px;
+}
 
 
