@@ -332,8 +332,12 @@ nav ul li {
   text-transform: uppercase;
 }
 
-nav ul li .fa-envelope {
-  font-size: 18px;
+nav ul li:hover {
+  font-weight: bolder;
+}
+
+nav ul a {
+  padding: 0 10px;
 }
 
 .intro.title-container {
@@ -348,15 +352,16 @@ nav ul li .fa-envelope {
 
 .intro .back-title {
   font-family: "Mrs Saint Delafield", cursive;
-  font-size: 110px;
+  font-size: 140px;
   color: white;
   text-transform: lowercase;
   opacity: .4;
-  top: 40px;
+  top: 34px;
+  left: 101px;
 }
 
 .intro .front-title {
-  top: 88px;
+  top: 103px;
   left: 95px;
 }
 
@@ -381,6 +386,10 @@ nav ul li .fa-envelope {
           transform: scale(1, 1) translate(-4px, -50px) rotate(4deg);
 }
 
+footer {
+  text-align: center;
+}
+
 .about {
   padding: 7%;
   margin-top: 2%;
@@ -393,15 +402,21 @@ nav ul li .fa-envelope {
   opacity: .9;
 }
 
+.portrait {
+  width: 40%;
+  opacity: 0.9;
+}
+
 .about-info {
   padding: 6%;
   text-align: center;
+  width: 60%;
 }
 
 .about .title-container {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,7 +439,7 @@ nav ul li .fa-envelope {
   text-transform: lowercase;
   opacity: .4;
   top: -75px;
-  right: 108px;
+  right: 145px;
 }
 
 .skills {
@@ -477,16 +492,17 @@ nav ul li .fa-envelope {
   padding: 5%;
 }
 
-.fas.fa-terminal, .fas.fa-code-branch {
+.fas.fa-terminal {
   font-size: 60px;
 }
 
 .projects {
   text-align: center;
+  padding: 60px 0px;
 }
 
-.projects h3 {
-  padding-top: 60px;
+.projects h3 ~ p {
+  padding-bottom: 65px;
 }
 
 .project {
@@ -519,6 +535,14 @@ nav ul li .fa-envelope {
           align-items: center;
 }
 
+.desc p {
+  padding: 0 30px 0 30px;
+}
+
+.desc a {
+  text-decoration: underline;
+}
+
 .btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,10 +555,15 @@ nav ul li .fa-envelope {
 }
 
 .btns a {
-  padding: 4%;
+  padding: 6px;
   width: 150px;
   margin: 2%;
   background-color: #ededed;
+  text-decoration: none;
+}
+
+.btns a:hover {
+  background-color: #d0cece;
 }
 
 .preview {
@@ -563,9 +592,41 @@ span {
   text-align: center;
 }
 
+.contact h3 {
+  padding-top: 100px;
+}
+
+.socials {
+  margin-top: 100px;
+}
+
+.socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials a {
+  padding: 15px;
+  font-size: 50px;
+}
+
+.resume {
+  font-size: 20px;
+}
+
 .email a {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  padding: 2%;
+  padding: 12px 20px;
+  width: 150px;
+  margin: 2%;
+  background-color: #f8f7f6;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.email a:hover {
+  background-color: #b0b3a2;
 }

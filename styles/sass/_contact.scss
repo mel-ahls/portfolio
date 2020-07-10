@@ -5,11 +5,37 @@
   background-repeat: no-repeat;
   height: 80vh;
   text-align: center;
+  h3 {
+    padding-top: 100px;
+  }
+}
+
+.socials {
+  margin-top: 100px;
+
+  ul {
+  display: flex;
+  justify-content: center;
+  }
+
+  a {
+    padding: 15px;
+    font-size: 50px;
+  }
+}
+
+.resume {
+  font-size: 20px;
 }
 
 .email a {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  padding: 2%;
+  padding: 12px 20px;
+  width: 150px;
+  margin: 2%;
+  background-color: $snow;
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+      background-color: $sage;
+    }
 }
