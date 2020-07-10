@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <meta name="keywords"
+    content="Front end developer, javascript, jquery, programmer, sass, html, css, react, node, toronto, ">
+  <meta name="description" content="I am a Front End Web Developer based out of Toronto">
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Josefin+Sans:wght@300&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 
@@ -22,7 +24,7 @@
 <body>
   <header>
     <div class="menu wrapper">
-      <nav>
+      <nav class="burg">
         <ul>
           <li><a href="#about">about</a></li>
           <li><a href="#skills">skills</a></li>
@@ -64,7 +66,12 @@
     
     <section id="skills" class="skills">
       <div class="wrapper">
-        <h3>skills</h3>
+        <div class="title-container">
+          <div class="back-title">skills</div>
+          <div class="front-title">
+            <h3>skills</h3>
+          </div>
+        </div>
         <ul>
           <li><i class="fab fa-html5"></i><br>html5</li>
           <li><i class="fab fa-css3-alt"></i><br>css3</li>
@@ -84,8 +91,13 @@
 
     <section id="projects">
       <div class="projects wrapper">
-        <h3>latest projects</h3>
-        <p>Take a look at my latest projects</p>
+        <div class="title-container">
+          <div class="back-title">projects</div>
+          <div class="front-title">
+            <h3>projects</h3>
+          </div>
+          <p>Take a look at my latest projects</p>
+        </div>
 
         <div>
           <div class="project one">
@@ -158,8 +170,10 @@
 
     <section id="contact" class="contact">
       <div class="wrapper">
-        <h3>contact me</h3>
-        <p>Let's connect! I'd love to chat with you about coding, music, video games and anything else really. Don't be shy! </p>
+        <div class="contact-info">
+          <h3>contact me</h3>
+          <p>Let's connect! I'd love to chat with you about coding, music,<br> video games and anything else really. Don't be shy! </p>
+        </div>
         <div class="socials">
           <ul>
             <li><a href="https://www.linkedin.com/in/melissa-ahlstrom/"><i class="fab fa-linkedin"></i></a></li>
@@ -182,5 +196,7 @@
       </div>
     </div>
   </footer>
+  <!-- SCRIPT LINK -->
+    <script src="script.js"></script>
 </body>
 </html>

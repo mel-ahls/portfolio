@@ -1,7 +1,7 @@
 // HEADER STYLES
 header {
   height: 100vh;
-  background-image: url(../assets/tree.jpg);
+  background-image: url(../assets/rubberplant-1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,9 +27,9 @@ nav ul {
 
 // layered text
 .intro.title-container {
-  position: relative;
-  top: 121px;
-  right: -528px;
+  position: absolute;
+  top: 200px;
+  right: 195px;
 }
 
 .intro .front-title, .intro .back-title {
@@ -37,10 +37,8 @@ nav ul {
 }
 
 .intro .back-title {
-  font-family: $cursive;
   font-size: 140px;
   color: white;
-  text-transform: lowercase;
   opacity: .4;
   top: 34px;
   left: 101px;

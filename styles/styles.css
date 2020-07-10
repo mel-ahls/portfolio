@@ -308,9 +308,24 @@ p {
   line-height: 2em;
 }
 
+.title-container {
+  position: relative;
+}
+
+.front-title, .back-title {
+  position: absolute;
+  display: inline;
+}
+
+.back-title {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-size: 150px;
+  text-transform: lowercase;
+}
+
 header {
   height: 100vh;
-  background-image: url(../assets/tree.jpg);
+  background-image: url(../assets/rubberplant-1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -341,9 +356,9 @@ nav ul a {
 }
 
 .intro.title-container {
-  position: relative;
-  top: 121px;
-  right: -528px;
+  position: absolute;
+  top: 200px;
+  right: 195px;
 }
 
 .intro .front-title, .intro .back-title {
@@ -351,10 +366,8 @@ nav ul a {
 }
 
 .intro .back-title {
-  font-family: "Mrs Saint Delafield", cursive;
   font-size: 140px;
   color: white;
-  text-transform: lowercase;
   opacity: .4;
   top: 34px;
   left: 101px;
@@ -408,23 +421,20 @@ footer {
 }
 
 .about-info {
-  padding: 6%;
+  padding-left: 5%;
   text-align: center;
   width: 60%;
 }
 
 .about .title-container {
   position: relative;
-  width: 100%;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  margin-bottom: 60px;
 }
 
 .about .front-title, .about .back-title {
@@ -439,7 +449,6 @@ footer {
   text-transform: lowercase;
   opacity: .4;
   top: -75px;
-  right: 145px;
 }
 
 .skills {
@@ -481,7 +490,7 @@ footer {
 }
 
 .skills ul li {
-  width: 230px;
+  width: 22%;
   height: 130px;
   text-transform: uppercase;
   text-align: center;
@@ -494,6 +503,25 @@ footer {
 
 .fas.fa-terminal {
   font-size: 60px;
+}
+
+.skills .title-container {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.skills .back-title {
+  color: #f8f7f6;
+  opacity: .8;
+  top: -70px;
 }
 
 .projects {
@@ -583,17 +611,53 @@ span {
   font-weight: bold;
 }
 
+.projects .title-container {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.projects .back-title {
+  color: #b2aaa6;
+  opacity: .3;
+  top: -74px;
+}
+
+.title-container p {
+  padding-top: 50px;
+}
+
 .contact {
   background-image: url(../assets/contact-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 60vh;
   text-align: center;
 }
 
 .contact h3 {
   padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.contact.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .socials {
@@ -629,4 +693,61 @@ span {
 
 .email a:hover {
   background-color: #b0b3a2;
+}
+
+@media (max-width: 800px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portrait {
+    width: 100%;
+  }
+  .about-info {
+    width: 100%;
+  }
+  .about-info {
+    margin-top: 80px;
+  }
+  .skills {
+    height: 100%;
+    padding: 5% 0%;
+  }
+  .skills .title-container {
+    margin-top: 50px;
+  }
+  .projects .title-container {
+    margin-bottom: 30px;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 6% 0%;
+  }
+  .one, .two, .three, .four {
+    margin: 15% 0%;
+    background-color: white;
+  }
+  .desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 645px) {
+  .skills ul li {
+    width: 26%;
+  }
+}
+
+@media (max-width: 515px) {
+  .skills ul li {
+    width: 35%;
+  }
+  .skills li {
+    margin: 3% 0%;
+  }
 }

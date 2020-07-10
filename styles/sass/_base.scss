@@ -72,3 +72,22 @@ p {
   font-size: 18px;
   line-height: 2em;
 }
+
+
+// layered text
+.title-container {
+  position: relative;
+
+}
+
+.front-title, .back-title {
+  position: absolute;
+  display: inline;
+}
+
+.back-title {
+  font-family: $cursive;
+  font-size: 150px;
+  text-transform: lowercase;
+}
+

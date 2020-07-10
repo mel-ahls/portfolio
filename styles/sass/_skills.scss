@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding: 3%;
   li {
-    width: 230px;
+    width: 22%;
     height: 130px;
     text-transform: uppercase;
     text-align: center;
@@ -32,4 +32,19 @@
 
 .fas.fa-terminal {
   font-size: 60px;
+}
+
+// layered text
+.skills .title-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.skills .back-title {
+  color: $snow;
+  opacity: .8;
+  top: -70px;
 }
