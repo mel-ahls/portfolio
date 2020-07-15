@@ -323,6 +323,302 @@ p {
   text-transform: lowercase;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .desktop-nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    background-color: #f8f7f6;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .show-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  :root {
+    --animationSpeed: 0.25s;
+  }
+  .hamburger-menu {
+    display: inline-block;
+    padding: 3px;
+    width: 29px;
+  }
+  .bars-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 20px;
+    z-index: 1;
+    top: 2%;
+    right: 2%;
+  }
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #222;
+    border-radius: 5px;
+    display: block;
+  }
+  .bar1 {
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+    position: relative;
+  }
+  .bars-container .bar {
+    position: absolute;
+    cursor: pointer;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .bars-container .bar1 {
+    top: 5%;
+    -webkit-animation: makeCross1Backward var(--animationSpeed) ease 0s 1 forwards, moveDownBackward var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+            animation: makeCross1Backward var(--animationSpeed) ease 0s 1 forwards, moveDownBackward var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+  }
+  .bars-container .bar2 {
+    top: 50%;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+  }
+  .bars-container .bar3 {
+    top: 95%;
+    -webkit-animation: makeCross2Backward var(--animationSpeed) ease 0s 1 forwards, moveUpBackward var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+            animation: makeCross2Backward var(--animationSpeed) ease 0s 1 forwards, moveUpBackward var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+  }
+  .input-check:checked + label .bar1 {
+    -webkit-animation: moveDown var(--animationSpeed) ease 0s 1 forwards, makeCross1 var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+            animation: moveDown var(--animationSpeed) ease 0s 1 forwards, makeCross1 var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+  }
+  .input-check:checked + label .bar2 {
+    opacity: 0;
+  }
+  .input-check:checked + label .bar3 {
+    -webkit-animation: moveUp var(--animationSpeed) ease 0s 1 forwards, makeCross2 var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+            animation: moveUp var(--animationSpeed) ease 0s 1 forwards, makeCross2 var(--animationSpeed) ease var(--animationSpeed) 1 forwards;
+  }
+  @-webkit-keyframes moveDown {
+    from {
+      top: 5%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+  }
+  @keyframes moveDown {
+    from {
+      top: 5%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+  }
+  @-webkit-keyframes moveDownBackward {
+    from {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    to {
+      top: 5%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes moveDownBackward {
+    from {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    to {
+      top: 5%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes moveUp {
+    from {
+      top: 95%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+  }
+  @keyframes moveUp {
+    from {
+      top: 95%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+  }
+  @-webkit-keyframes moveUpBackward {
+    from {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    to {
+      top: 95%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes moveUpBackward {
+    from {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    to {
+      top: 95%;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes makeCross1 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
+    }
+  }
+  @keyframes makeCross1 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
+    }
+  }
+  @-webkit-keyframes makeCross1Backward {
+    from {
+      top: 50%;
+      -webkit-transform: rotate(40deg) translateY(-50%);
+              transform: rotate(40deg) translateY(-50%);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: rotate(0deg) translateY(-50%);
+              transform: rotate(0deg) translateY(-50%);
+    }
+  }
+  @keyframes makeCross1Backward {
+    from {
+      top: 50%;
+      -webkit-transform: rotate(40deg) translateY(-50%);
+              transform: rotate(40deg) translateY(-50%);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: rotate(0deg) translateY(-50%);
+              transform: rotate(0deg) translateY(-50%);
+    }
+  }
+  @-webkit-keyframes makeCross2 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+    }
+  }
+  @keyframes makeCross2 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+    }
+  }
+  @-webkit-keyframes makeCross2Backward {
+    from {
+      top: 50%;
+      -webkit-transform: rotate(-40deg) translateY(-50%);
+              transform: rotate(-40deg) translateY(-50%);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: rotate(0deg) translateY(-50%);
+              transform: rotate(0deg) translateY(-50%);
+    }
+  }
+  @keyframes makeCross2Backward {
+    from {
+      top: 50%;
+      -webkit-transform: rotate(-40deg) translateY(-50%);
+              transform: rotate(-40deg) translateY(-50%);
+    }
+    to {
+      top: 50%;
+      -webkit-transform: rotate(0deg) translateY(-50%);
+              transform: rotate(0deg) translateY(-50%);
+    }
+  }
+}
+
 header {
   height: 100vh;
   background-image: url(../assets/rubberplant-1.jpg);
@@ -602,10 +898,6 @@ footer {
   opacity: 0.8;
 }
 
-.preview img {
-  border-radius: 25px;
-}
-
 span {
   color: #b2aaa6;
   font-weight: bold;
@@ -661,7 +953,7 @@ span {
 }
 
 .socials {
-  margin-top: 100px;
+  padding-top: 240px;
 }
 
 .socials ul {
@@ -695,7 +987,45 @@ span {
   background-color: #b0b3a2;
 }
 
+.contact .title-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contact .back-title {
+  color: #f8f7f6;
+  top: 22px;
+}
+
+.contact-info p {
+  padding: 50px 30px 0px 61px;
+}
+
 @media (max-width: 800px) {
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro.title-container {
+    right: 70px;
+    z-index: -1;
+  }
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -738,16 +1068,41 @@ span {
 }
 
 @media (max-width: 645px) {
+  .intro h1 {
+    font-size: 42px;
+  }
+  .intro h3 {
+    font-size: 22px;
+  }
+  .intro.title-container {
+    right: 35px;
+  }
+  .intro .front-title {
+    left: 175px;
+    top: 95px;
+  }
+  .intro .back-title {
+    font-size: 115px;
+    top: 68px;
+  }
   .skills ul li {
     width: 26%;
   }
 }
 
 @media (max-width: 515px) {
+  .intro.title-container {
+    position: relative;
+    text-align: center;
+    top: 32px;
+  }
   .skills ul li {
     width: 35%;
   }
   .skills li {
     margin: 3% 0%;
+  }
+  .socials {
+    padding-top: 325px;
   }
 }

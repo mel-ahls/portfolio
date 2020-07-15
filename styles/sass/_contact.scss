@@ -18,8 +18,7 @@
 }
 
 .socials {
-  margin-top: 100px;
-
+  padding-top: 240px;;
   ul {
   display: flex;
   justify-content: center;
@@ -45,4 +44,21 @@
   &:hover {
       background-color: $sage;
     }
+}
+
+.contact .title-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contact .back-title {
+ 
+  color: $snow;
+  top: 22px;
+}
+
+.contact-info p {
+  padding: 50px 30px 0px 61px;
 }

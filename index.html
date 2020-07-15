@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- GOOGLE THINGS -->
   <meta name="keywords"
     content="Front end developer, javascript, jquery, programmer, sass, html, css, react, node, toronto, ">
   <meta name="description" content="I am a Front End Web Developer based out of Toronto">
+
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Josefin+Sans:wght@300&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 
@@ -24,7 +27,7 @@
 <body>
   <header>
     <div class="menu wrapper">
-      <nav class="burg">
+      <nav class="desktop-nav">
         <ul>
           <li><a href="#about">about</a></li>
           <li><a href="#skills">skills</a></li>
@@ -32,6 +35,27 @@
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
+
+      <!-- start - mobile nav -->
+      <div class="mobile-menu">
+        <div class="hamburger-menu" onClick="show()">
+          <input type="checkbox" class="input-check" id="input-check" hidden />
+          <label class="bars-container show-nav" for="input-check">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+          </label>
+        </div>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- finish - mobile nav -->
 
       <div class="intro title-container">
         <h1>Melissa Ahlstrom</h1>
@@ -109,7 +133,7 @@
               <a href="https://www.robertduhig.com/">Robert</a> &
               <a href="https://www.taylorrobertson.com/">Taylor</a>.</p>
               <div class="btns">
-                <a href="">View Live</a>
+                <a href="https://thefilmfour.github.io/theFilmFactory/">View Live</a>
                 <a href="https://github.com/thefilmfour/theFilmFactory">View On Github</a>
               </div>
             </div>
@@ -170,9 +194,14 @@
 
     <section id="contact" class="contact">
       <div class="wrapper">
-        <div class="contact-info">
-          <h3>contact me</h3>
-          <p>Let's connect! I'd love to chat with you about coding, music,<br> video games and anything else really. Don't be shy! </p>
+        <div class="title-container">
+          <div class="back-title">contact</div>
+          <div class="front-title">
+            <h3>contact me</h3>
+            <div class="contact-info">
+              <p>Let's connect! I'd love to chat with you about coding, music,<br> video games and anything else really. Don't be shy! </p>
+            </div>
+          </div>
         </div>
         <div class="socials">
           <ul>
@@ -196,7 +225,8 @@
       </div>
     </div>
   </footer>
-  <!-- SCRIPT LINK -->
-    <script src="script.js"></script>
+  <!-- SCRIPTS LINK -->
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+  <script src="script.js"></script>
 </body>
 </html>

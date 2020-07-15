@@ -1,7 +1,5 @@
-// burger nav
-$('.menu-toggle').click(function () {
+function show() {
+  const nav = document.getElementById('#nav-toggle');
+  nav.classList.add('.show-nav');
+}
 
-  $('.site-nav').toggleClass('site-nav--open', 500);
-  $(this).toggleClass('open');
-
-})

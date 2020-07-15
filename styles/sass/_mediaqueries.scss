@@ -1,5 +1,19 @@
 @media (max-width: 800px) {
 
+  // HEADER STYLES
+   nav {
+    justify-content: end;
+    display: flex;
+    ul {
+      flex-direction: column;
+    }
+  }
+
+  .intro.title-container {
+    right: 70px;
+    z-index:-1;
+  }
+
   // ABOUT SECTION
   .about {
     flex-direction: column;
@@ -28,7 +42,6 @@
   }
 
 
-
   // PROJECT SECTION
   .projects .title-container {
     margin-bottom: 30px;
@@ -50,17 +63,52 @@
 }
 
 @media (max-width: 645px) {
+
+  .intro h1 {
+    font-size: 42px;
+  }
+
+  .intro h3 {
+    font-size: 22px;
+  }
+
+  .intro.title-container {
+    right: 35px;
+  }
+
+  .intro .front-title {
+    left: 175px;
+    top: 95px;
+  }
+
+  .intro .back-title {
+    font-size: 115px;
+    top: 68px;
+  }
+
+
+  // SKILLS STYLES
   .skills ul li {
     width: 26%;
   }
 }
 
 @media (max-width: 515px) {
+  .intro.title-container {
+    position: relative;
+    text-align: center;
+    top: 32px;
+  }
+
   .skills ul li {
     width: 35%;
   }
 
   .skills li {
     margin: 3% 0%;
+  }
+
+  .socials {
+    padding-top: 325px;
   }
 }
