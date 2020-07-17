@@ -86,6 +86,11 @@
     top: 68px;
   }
 
+  // ABOUT STYLES 
+  .about {
+    margin-bottom: 5%;
+  }
+
 
   // SKILLS STYLES
   .skills ul li {
@@ -100,6 +105,10 @@
     top: 32px;
   }
 
+  .desc span {
+    width: 80%;
+  }
+
   .skills ul li {
     width: 35%;
   }
@@ -109,6 +118,6 @@
   }
 
   .socials {
-    padding-top: 325px;
+    padding-top: 290px;
   }
 }

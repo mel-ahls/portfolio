@@ -15,12 +15,15 @@
 
   <!-- FAVICON -->
   <link rel="icon" href="./favicon.ico">
- 
-  <!-- STYLESHEET -->
-  <link rel="stylesheet" href="styles/styles.css">
-
+  
+  <!-- AOS LIBRARY -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/73650af842.js" crossorigin="anonymous"></script>
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="styles/styles.css">
 
   <title>MELISSA AHLSTROM</title>
 </head>
@@ -38,14 +41,7 @@
 
       <!-- start - mobile nav -->
       <div class="mobile-menu">
-        <div class="hamburger-menu" onClick="show()">
-          <input type="checkbox" class="input-check" id="input-check" hidden />
-          <label class="bars-container show-nav" for="input-check">
-            <span class="bar bar1"></span>
-            <span class="bar bar2"></span>
-            <span class="bar bar3"></span>
-          </label>
-        </div>
+      <div class="burg" onClick="toggleNav()"><i class="fas fa-bars"></i></div>
         <nav class="mobile-nav">
           <ul>
             <li><a href="#about">about</a></li>
@@ -59,11 +55,11 @@
 
       <div class="intro title-container">
         <h1>Melissa Ahlstrom</h1>
-        <div class="back-title">Developer</div>
-        <div class="front-title">
+        <div class="back-title" data-aos="fade-right">Developer</div>
+        <div class="front-title" data-aos="fade-left">
           <h3>Front-End Developer</h3>
         </div>
-      </div>
+      </div> 
     </div>
 
     <div class="angle-left"></div>
@@ -78,8 +74,8 @@
         </div>
         <div class="about-info">
           <div class="title-container">
-            <div class="back-title">about</div>
-            <div class="front-title">
+            <div class="back-title" data-aos="fade-right">about</div>
+            <div class="front-title" data-aos="fade-left">
               <h3>about me</h3>
             </div>
           </div>
@@ -91,8 +87,8 @@
     <section id="skills" class="skills">
       <div class="wrapper">
         <div class="title-container">
-          <div class="back-title">skills</div>
-          <div class="front-title">
+          <div class="back-title" data-aos="fade-right">skills</div>
+          <div class="front-title" data-aos="fade-left">
             <h3>skills</h3>
           </div>
         </div>
@@ -116,8 +112,8 @@
     <section id="projects">
       <div class="projects wrapper">
         <div class="title-container">
-          <div class="back-title">projects</div>
-          <div class="front-title">
+          <div class="back-title" data-aos="fade-right">projects</div>
+          <div class="front-title" data-aos="fade-left">
             <h3>projects</h3>
           </div>
           <p>Take a look at my latest projects</p>
@@ -195,8 +191,8 @@
     <section id="contact" class="contact">
       <div class="wrapper">
         <div class="title-container">
-          <div class="back-title">contact</div>
-          <div class="front-title">
+          <div class="back-title" data-aos="fade-right">contact</div>
+          <div class="front-title" data-aos="fade-left">
             <h3>contact me</h3>
             <div class="contact-info">
               <p>Let's connect! I'd love to chat with you about coding, music,<br> video games and anything else really. Don't be shy! </p>
@@ -226,7 +222,17 @@
     </div>
   </footer>
   <!-- SCRIPTS LINK -->
-  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
   <script src="script.js"></script>
+
+  <!-- JQUERY LINK -->
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+  <!-- AOS LINK -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900
+    });
+  </script>
 </body>
 </html>

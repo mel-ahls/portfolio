@@ -70,11 +70,12 @@ span {
 }
 
 .projects .back-title {
-  color: $wolf;
+  color: $light-wolf;
   opacity: .3;
   top: -74px;
 }
 
-.title-container p {
+.projects .title-container p {
   padding-top: 50px;
+  z-index: 1;
 }

@@ -18,7 +18,7 @@
 }
 
 .socials {
-  padding-top: 240px;;
+  padding-top: 270px;;
   ul {
   display: flex;
   justify-content: center;
@@ -41,9 +41,11 @@
   background-color: $snow;
   text-decoration: none;
   display: inline-block;
+  transition: .4s;
   &:hover {
-      background-color: $sage;
-    }
+    border: 1px solid $sage;
+    box-shadow: 0px 0px 0px 3px $sage;
+  }
 }
 
 .contact .title-container {
@@ -55,10 +57,10 @@
 
 .contact .back-title {
  
-  color: $snow;
+  color: $light-snow2;
   top: 22px;
 }
 
 .contact-info p {
-  padding: 50px 30px 0px 61px;
+  padding: 2% -2% 0% 5%;
 }
