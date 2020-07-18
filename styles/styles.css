@@ -323,61 +323,6 @@ p {
   text-transform: lowercase;
 }
 
-.mobile-nav, .burg {
-  display: none;
-}
-
-@media (max-width: 800px) {
-  .desktop-nav ul {
-    display: none;
-  }
-  .burg {
-    display: block;
-    font-size: 25px;
-    position: absolute;
-    z-index: 1;
-    right: 25px;
-    top: 25px;
-  }
-  .burg:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  .mobile-nav {
-    visibility: hidden;
-    background-color: #f8f7f6;
-    padding: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 300px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mobile-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left;
-  }
-  .clicked {
-    display: block;
-    background-color: red;
-  }
-}
-
 header {
   height: 100vh;
   background-image: url(../assets/rubberplant-1.jpg);
@@ -874,5 +819,58 @@ span {
   }
   .socials {
     padding-top: 290px;
+  }
+}
+
+.mobile-display, .burg {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .desktop-nav ul {
+    display: none;
+  }
+  .burg {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    right: 25px;
+    top: 25px;
+  }
+  .burg:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .ham-btn ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .mobile-display {
+    background-color: #f8f7f6;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  .clicked {
+    display: block;
   }
 }

@@ -1,15 +1,17 @@
-// when MQ is reached, menu is closed aka false (because we set it originally to visbility: hidden to the user has to click to burg to open it)
-let toggleNavStatus = false;
+// onClick run this function
+function burgNav() {
 
+  //get the id mobile-menu and set it to the variable name of nav
+  const nav = document.getElementById("mobile-menu");
 
-let toggleNav = function() {
-  let getMenu = document.querySelector('.mobile-menu');
-  let getMobileNav = document.querySelector('.mobile-nav');
-  
-  if (toggleNavStatus === false) {
-    getMenu.style.visibility = 'visible';
-  }
-  else {
-    getMenu.style.visibility ='hidden';
+  // now id=mobile menu is now called nav (only in .js)
+  // if nav(AKA id=mobile-menu) is clicked, give it a class of mobile-display (which is set to display:none before click) and the class of clicked (which is display: block) to display the nav
+  if (nav.className === "mobile-display") {
+    nav.className += " clicked";
+    // YOU NEED THIS SPACE " clicked"
+
+    // if nav isn't clicked leave it as mobile-display which is set to display: none
+  } else {
+    nav.className = "mobile-display";
   }
 }

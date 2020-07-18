@@ -1,4 +1,4 @@
-.mobile-nav, .burg {
+.mobile-display, .burg {
   display: none;
 }
 
@@ -23,8 +23,13 @@
     }
   }
 
-  .mobile-nav {
-    visibility: hidden;
+  .ham-btn ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-display {
     background-color: $snow;
     padding: 30px;
     position: absolute;
@@ -33,20 +38,13 @@
     right: 0;
     display: flex;
     justify-content: center;
-    height: 300px;
+    // height: 300px;
     align-items: center;
+    display: none;
   }
-
-  .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-
-
+  
   .clicked {
     display: block;
-    background-color: red;
   }
 
 }
