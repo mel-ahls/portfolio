@@ -9,6 +9,7 @@
 
 .project {
   display: flex;
+  margin: 50px 0px;
 }
 
 .two, .four {
@@ -22,7 +23,7 @@
   justify-content: center;
   align-items: center;
   p {
-    padding: 0 30px 0 30px;
+    padding-top: 10px;
   }
 
   a {
@@ -32,7 +33,6 @@
 
 .btns {
   display: flex;
-  flex-direction: column;
   margin-top: 15px;
   a {
     padding: 6px;

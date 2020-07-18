@@ -537,6 +537,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 50px 0px;
 }
 
 .two, .four {
@@ -564,7 +565,7 @@ footer {
 }
 
 .desc p {
-  padding: 0 30px 0 30px;
+  padding-top: 10px;
 }
 
 .desc a {
@@ -575,10 +576,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 15px;
 }
 
@@ -787,12 +784,13 @@ span {
     right: 35px;
   }
   .intro .front-title {
-    left: 175px;
-    top: 95px;
+    left: 85px;
+    top: 100px;
+    width: 100%;
   }
   .intro .back-title {
     font-size: 115px;
-    top: 68px;
+    top: 45px;
   }
   .about {
     margin-bottom: 5%;
@@ -803,10 +801,23 @@ span {
 }
 
 @media (max-width: 515px) {
+  .mobile-display ul li {
+    text-transform: uppercase;
+    padding: 15%;
+    font-size: 30px;
+  }
   .intro.title-container {
     position: relative;
-    text-align: center;
-    top: 32px;
+    text-align: right;
+    width: 90%;
+  }
+  .intro .front-title {
+    left: 40%;
+    top: 100px;
+    width: 60%;
+  }
+  .intro .back-title {
+    display: none;
   }
   .desc span {
     width: 80%;
@@ -832,7 +843,7 @@ span {
   }
   .burg {
     display: block;
-    font-size: 25px;
+    font-size: 30px;
     position: absolute;
     z-index: 1;
     right: 25px;

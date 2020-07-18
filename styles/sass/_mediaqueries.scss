@@ -77,13 +77,14 @@
   }
 
   .intro .front-title {
-    left: 175px;
-    top: 95px;
+    left: 85px;
+    top: 100px;
+    width: 100%;
   }
 
   .intro .back-title {
     font-size: 115px;
-    top: 68px;
+    top: 45px;
   }
 
   // ABOUT STYLES 
@@ -99,10 +100,26 @@
 }
 
 @media (max-width: 515px) {
+  .mobile-display ul li {
+    text-transform: uppercase;
+    padding: 15%;
+    font-size: 30px;
+  }
+
   .intro.title-container {
     position: relative;
-    text-align: center;
-    top: 32px;
+    text-align: right;
+    width: 90%;
+  }
+
+  .intro .front-title {
+    left: 40%;
+    top: 100px;
+    width: 60%;
+  }
+
+  .intro .back-title {
+    display: none;
   }
 
   .desc span {
