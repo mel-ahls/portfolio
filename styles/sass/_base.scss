@@ -27,13 +27,13 @@ img {
 // BASE STYLES
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden!important;
 }
 
 body {
   font-family: $body;
   color: $dark;
   background-color: $snow;
+  overflow-x: hidden;
 }
 
 .wrapper {

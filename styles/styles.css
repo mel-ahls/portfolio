@@ -262,13 +262,13 @@ img {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #3f382e;
   background-color: #f8f7f6;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -338,7 +338,7 @@ nav ul {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 nav ul li {
@@ -642,6 +642,7 @@ span {
   background-repeat: no-repeat;
   height: 60vh;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .contact h3 {
