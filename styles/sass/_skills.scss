@@ -11,6 +11,22 @@
   text-align: center;
 }
 
+// layered text
+.skills .title-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.skills .back-title {
+  color: $light-snow;
+  opacity: .8;
+  top: -70px;
+}
+// 
+
 .skills ul {
   display: flex;
   flex-wrap: wrap;
@@ -32,19 +48,4 @@
 
 .fas.fa-terminal {
   font-size: 60px;
-}
-
-// layered text
-.skills .title-container {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.skills .back-title {
-  color: $light-snow;
-  opacity: .8;
-  top: -70px;
 }
