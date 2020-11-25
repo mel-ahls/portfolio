@@ -423,7 +423,7 @@ footer {
 
 .about-info {
   padding-left: 5%;
-  text-align: center;
+  text-align: left;
   width: 60%;
 }
 
@@ -457,7 +457,6 @@ footer {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,6 +471,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 60px 0px;
 }
 
 .skills .title-container {
@@ -485,6 +485,7 @@ footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-top: 30px;
 }
 
 .skills .back-title {
@@ -727,9 +728,9 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh;
   text-align: center;
   overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 .contact h3 {
